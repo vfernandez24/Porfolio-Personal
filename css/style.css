@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff6f61;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c85045;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d8d8d8;
+    padding: 5px 0;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    z-index: 50;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #ff6f61;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all ease 1s;
+    background-color: #fff;
+}
+
+.header__logo a {
+    margin-left: 5vw;
+    color: #ff6f61;
+    text-shadow: 0px 0px 15px #ffb1b1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header__nav {
+    width: 50%;
+}
+
+.header__item {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #000;
+    transition: color ease .3s;
+}
+
+.header__link:hover {
+    color: #ff6f61;
+}
+
+.header__link--contact {
+    padding: 5px 15px;
+    border: 1px solid #ff6f61;
+    border-radius: 15px;
+    color: #fff;
+    background: #ff6f61;
+    transition: color, background-color ease .5s;
+}
+
+.header__link--contact:hover {
+    background: #fff;
+    color: #ff6f61;
+}
+
+.header__icon {
+    height: 8vh;
+}
+
+.header__btn {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+
+.header__btn span {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background: #ff6f61;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%;
+}
+.header__btn span:nth-child(2) {
+    top: calc(50% - 2px);
+}
+.header__btn span:nth-child(3) {
+    bottom: 0;
+}
+
+.header__list {
+    margin-right: 5vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__opciones {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+    
+.header__btn {
+    display: none;
+}
+
+main {
+    margin-top: 12vh;
+}
+
+/* INICIO */
+
+.section {
+    width: 100vw;
+    height: 550px;
+}
+
+.section_inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_inicio__titulo1 {
+    height: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section_inicio__foto {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.section_inicio__frase1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.section_inicio__frase1 span {
+    color: #455a64;
+}
+
+.section_inicio__frase2 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+
+/* SOBRE MI */
+
+.section_sobreMi {
+    background: linear-gradient(to bottom, #fff, #fff, #fff, #ff6e6188)
+}
+
+.section__titulo {
+    color: #ff6f61;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.section__titulo span {
+    color: #daa520;
+    padding: 0 10px;
+}
+
+.section_sobreMi__contenido {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_sobreMi__foto {
+    width: 250px;
+    margin-left: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #000000ad;
+}
+
+.section_sobreMi__texto {
+    height: fit-content;
+    padding: 0 10%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+
+/* HABILIDADES */
+
+.section_habilidades {
+    width: 100vw;
+    height: 550px;
+    background-color: #ff6e6188;
+}
+
+.section_habilidades__container {
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    background: #455a64;
+    box-shadow: 0px 0px 20px #444;
+    padding: 5% 5% 5% 5%;
+    border-radius: 50px;
+    position: relative;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.section_habilidades__habilidad {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section__titulo--habilidades {
+    margin-bottom: 60px;
+}
+
+.section__titulo--habilidades span {
+    color: #fff;
+}
+
+.section_habilidades__containerHabilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_habilidades__containerHabilidades1 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section_habilidades__img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.section_habilidades__nombre {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.section_habilidades__habilidad--inlges {
+    width: 100%;
+}
+
+
+/* PROYECTOS */
+
+.section_proyectos {
+    padding-top: 30px;
+    height: fit-content;
+    padding-bottom: 90px;
+    border-bottom: 0.5px solid rgb(202, 202, 202);
+}
+
+.section_proyectos__contenedorProyectos {
+    width: 65%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.section_proyectos__containerProyectos {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section_proyectos__proyecto {
+    height: 250px;
+    width: 400px;
+    margin-bottom: 5px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.section_proyectos__div {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, transparent, #444444a0, #444);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transition: clip-path ease-in-out .3s ;
+    opacity: 0.5;
+    transition: opacity ease-in-out .3s;
+    position: absolute;
+}
+
+.section_proyectos__proyecto:hover .section_proyectos__div {
+    opacity: 1;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.section_proyectos__divEnlaces {
+    margin-top: 10px;
+}
+
+.section_proyectos__links {
+    text-decoration: none;
+    border: 1px solid #ff6f61;
+    background: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: black;
+    transition: color ease .5s; 
+    transition: background-color ease .5s;
+}
+
+.section_proyectos__links:hover {
+    background: #ff6F61;
+    color: #ffffff;
+}
+
+.section_proyectos__img {
+    border-radius: 60px;
+}
+
+
+/* CONTACTO */
+
+.section_contacto {
+    padding-top: 90px;
+}
+
+.section_contacto__container {
+    width: 100%;
+    height: 350px;
+}
+
+.section_contacto__texto {
+    display: block;
+    width: 100%;
+    padding: 80px 15% 50px 15%;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.section_contacto__btn, .section_proyectos__btnVerMas {
+    width: 250px;
+    height: 50px;
+    background: #ff6f61;
+    border: 1px solid #ff6f61;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color, background-color ease .3s;
+    cursor: pointer;
+}
+
+.section_contacto__btn:hover, .section_proyectos__btnVerMas:hover {
+    background-color: #fff;
+    color: #ff6f61;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background: #ff6e6167;
+}
+
+.footer__div {
+    width: 100%;
+    height: 100px;
+}
+
+.footer__div--1 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+}
+
+.footer__lista {
+    display: flex;
+}
+
+.footer__item {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.footer__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    transition: color ease .3s;
+}
+
+.footer__link:hover {
+    color: #fff
+}
+
+.footer__div--2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+    font-size:30px;
+    color: #ff6f61;
+    font-weight: 200;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    body {
+        min-width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    /* SCROLL */
+
+    ::-webkit-scrollbar {
+        width: 0px;;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        height: 10vh;
+    }
+
+    .header__logo {
+        width: 70%;
+    }
+
+    .header__logo a {
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .header__list {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background: #fcfcfc;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .8s ease-out;
+    }
+
+    .header__opciones {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .header__item {
+        width: 200px;
+        margin: 20px 0;
+    }
+
+    .header__btn {
+        display: block;
+    }
+
+    .animacionMenu span:nth-child(1) {
+        transform: rotate(45deg); 
+    }
+      
+    .animacionMenu span:nth-child(2) {
+        opacity: 0; 
+    }
+      
+    .animacionMenu span:nth-child(3) {
+        transform: rotate(-45deg) translate(0px, 4px); 
+    }
+    .activeMenu {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    
+    /* INICIO */
+
+    .section_inicio__titulo1 {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .section_inicio__frase1 {
+        font-size: 25px;
+    }
+
+    .section_inicio__frase2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    /* SOBRE MI */
+
+    .section_sobreMi {
+        height: calc(fit-content + 100px);
+        padding-bottom: 40px;
+    }
+
+    .section_sobreMi__contenido {
+        height: fit-content;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .section_sobreMi__foto {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 125px;
+    }
+
+    .section_sobreMi__texto {
+        font-size: 15px;
+        padding: 0 5%;
+    }
+
+
+    /* HABILIDADES */
+
+    .section_habilidades {
+        padding-top: 60px;
+        height: calc(550px + 60px);
+    }
+
+    .section_habilidades__img {
+        width: 35px;
+    }
+
+    .section_habilidades__habilidad {
+        float: none;
+    }
+
+    .section_habilidades__containerHabilidades1 {
+        margin: 0;
+    }
+
+    .section_habilidades__nombre {
+        font-size: 20px;
+    }
+
+
+    /* PROYECTOS */
+
+    .section_proyectos .section__titulo {
+        margin-bottom: 20px;
+    }
+
+    .section_proyectos__containerProyectos {
+        display: block;
+        margin-bottom:0;
+    }
+
+    .section_proyectos__proyecto {
+        width: 100%;
+        height: 175px;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    .section_proyectos__img {
+        width: 100%;
+        height: 175px;
+        margin: auto;
+    }
+
+    .section_proyectos__div {
+        margin: auto;
+    }
+
+
+    /* CONTACTO */
+
+    .section_contacto {
+        padding-top: 90px;
+        height: fit-content;
+    }
+    
+    .section_contacto__container {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 40px
+    }
+
+
+    /* FOOTER */
+
+    .footer__item {
+        margin-right: 20px;
+    }
+
+    .footer__item--last {
+        margin-right: 0;
+    }
+}

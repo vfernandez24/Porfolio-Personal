@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Victor Fernandez</title>
+    <link rel="icon" href="img/Icono.png" type="image/png">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container" class="container">
+
+        <!--Header-->
+        <header id="nav" class="header">
+            <!--Logo-->
+            <div class="header__logo">
+                <h1><a href="index.html">Victor Fernandez</a></h1>
+            </div>
+            <!--Nav-->
+            <div class="header__nav">
+                <ul class="header__list">
+                    <div class="header__opciones">
+                        <li class="header__item">
+                            <a href="#sobreMi" class="header__link">Sobre mi</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#habilidades" class="header__link">Skills</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#proyectos" class="header__link">Proyectos</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="contacto.html" class="header__link header__link--contact">Contacto</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!--Boton-->
+            <div class="header__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <main>
+
+            <!--Inicio-->
+            <section class="section section_inicio">
+                <div class="section_inicio__titulo1">
+                    <img class="section_inicio__foto" src="img/html_simbolo.svg">
+                    <h1 class="section_inicio__frase1">Hola, soy <span>Víctor Fernández</span>,</h1>
+                </div>
+                <h1 class="section_inicio__frase2">estudiante y aficionado a la programacion web</h1>
+            </section>
+
+            <!--Sobre mí-->
+            <section id="sobreMi" class="section section_sobreMi">
+                <h2 class="section__titulo">{<span>Sobre mi</span>}</h2>
+                <div class="section_sobreMi__contenido">
+                    <img class="section_sobreMi__foto" src="img/human_foto.svg">
+                    <div class="section_sobreMi__texto">
+                        <p>
+                            Soy Victor, un programador frontend con pasión
+                            por crear interfaces web elegantes y funcionales. 
+                            Con experiencia en HTML, CSS, JavaScript y React, 
+                            me enfoco en diseñar soluciones intuitivas y 
+                            accesibles. Me encanta enfrentar nuevos desafíos 
+                            y aprender continuamente para mejorar mis 
+                            habilidades. Si tienes un proyecto en mente, 
+                            estaré encantado de ayudarte a darle vida.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Habilidades-->
+            <section id="habilidades" class="section section_habilidades">
+                <div class="section_habilidades__container">
+                    <h2 class="section__titulo section__titulo--habilidades">{<span>Skills</span>}</h2>
+                    <div class="section_habilidades__containerHabilidades">
+                        <div class="section_habilidades__containerHabilidades1">
+                            <div class="section_habilidades__habilidad">
+                                <img class="section_habilidades__img" src="img/logo_html.svg">
+                                <h3 class="section_habilidades__nombre">HTML</h3>
+                            </div>
+                            <div class="section_habilidades__habilidad">
+                                <img class="section_habilidades__img" src="img/logo_css.svg">
+                                <h3 class="section_habilidades__nombre">CSS</h3>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="section_habilidades__containerHabilidades1">
+                            <div class="section_habilidades__habilidad">
+                                <img class="section_habilidades__img" src="img/logo_js.svg">
+                                <h3 class="section_habilidades__nombre">JavaScript</h3>
+                            </div>
+                            <div class="section_habilidades__habilidad">
+                                <img class="section_habilidades__img" src="img/logo_ps.svg">
+                                <h3 class="section_habilidades__nombre">Pseudocódigo</h3>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="section_habilidades__containerHabilidades1">
+                            <div class="section_habilidades__habilidad section_habilidades__habilidad--ingles">
+                                <img class="section_habilidades__img" src="img/logo_ingles.svg">
+                                <h3 class="section_habilidades__nombre">English Cambridge B1 Level</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Proyectos-->
+            <section id="proyectos" class="section section_proyectos">
+                <h2 class="section__titulo">{<span>Proyectos</span>}</h2>
+                <div class="section_proyectos__contenedorProyectos">
+                    <div class="section_proyectos__containerProyectos">
+                        <div class="section_proyectos__proyecto section_proyectos__proyecto--TuLibroFavorito">
+                            <img class="section_proyectos__img" src="img/MiLibroFavorito.png">
+                            <div class="section_proyectos__div">
+                                <div class="section_proyectos__divEnlaces">
+                                    <a target="_blank" href="" class="section_proyectos__links">Web</a>
+                                    <a target="_blank" href="https://github.com/vfernandez24/MiLibroFavorito.com" class="section_proyectos__links">Codigo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_proyectos__proyecto section_proyectos__proyecto--InicioDeSesion">
+                            <img class="section_proyectos__img" src="img/InicioDeSesion.png">
+                            <div class="section_proyectos__div">
+                                <div class="section_proyectos__divEnlaces">
+                                    <a target="_blank" href="https://vfernandez24.github.io/Inicio-de-Sesion/" class="section_proyectos__links">Web</a>
+                                    <a target="_blank" href="https://github.com/vfernandez24/Inicio-de-Sesion" class="section_proyectos__links">Codigo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_proyectos__containerProyectos">
+                        <div class="section_proyectos__proyecto section_proyectos__proyecto--FormularioDeContacto">
+                            <img class="section_proyectos__img" src="img/FormularioDeContacto.png">
+                            <div class="section_proyectos__div">
+                                <div class="section_proyectos__divEnlaces">
+                                    <a target="_blank" href="https://vfernandez24.github.io/Formulario-de-Contacto/" class="section_proyectos__links">Web</a>
+                                    <a target="_blank" href="https://github.com/vfernandez24/Formulario-de-Contacto" class="section_proyectos__links">Codigo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_proyectos__proyecto section_proyectos__proyecto--Calculadora">
+                            <img class="section_proyectos__img" src="img/Calculadora.png">
+                            <div class="section_proyectos__div">
+                                <div class="section_proyectos__divEnlaces">
+                                    <a target="_blank" href="" class="section_proyectos__links">Web</a>
+                                    <a target="_blank" href="https://github.com/vfernandez24/Calculadora" class="section_proyectos__links">Codigo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a target="_blank" href="https://github.com/vfernandez24?tab=repositories" class="section_proyectos__btnVerMas">
+                    Ver más proyectos
+                </a>
+            </section>
+
+            <!--Contacto-->
+            <section class="section section_contacto">
+                <h2 class="section__titulo">{<span>Contacto</span>}</h2>
+                <div class="section_contacto__container">
+                    <p class="section_contacto__texto">
+                        ¿Tienes una idea para un proyectos? Enviame un mensaje y estaré encantado de escucharla y seguramente de participar en ella
+                    </p>
+                    <a href="mensaje.html" class="section_contacto__btn">
+                        Enviar Mensaje
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer__div footer__div--1">
+                <ul class="footer__lista">
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/vf.ernandez_/" class="footer__link">Instagram</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://github.com/vfernandez24" class="footer__link">Github</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://x.com/?lang=es" class="footer__link">Twitter</a>
+                    </li>
+                    <li class="footer__item footer__item--last">
+                        <a href="https://www.linkedin.com/in/victor-fernandez-660598278/" class="footer__link">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__div footer__div--2">
+                © 2024 Victor Fernandez
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
