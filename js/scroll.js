@@ -11,8 +11,9 @@
         let desplazamientoActual = window.pageYOffset;
     
         /* --condicon para ocultar o mostrar el menu */
-        if(ubicacionPrincipal >= desplazamientoActual) {
+        if(ubicacionPrincipal > desplazamientoActual) {
             /* --si es mayor o igual se muesta */
+            $nav.style.opacity = "1";
             $nav.style.top = "0px";
             console.log('Ubicacion Principal')
             console.log(ubicacionPrincipal)
@@ -25,6 +26,7 @@
             console.log(ubicacionPrincipal)
             console.log('desplazamiento')
             console.log(desplazamientoActual)
+            $nav.style.opacity = "0";
         }
     
         /* --actulizamos la ubicacion principal */
