@@ -1,4 +1,4 @@
-document.querySelectorAll('.header__link').forEach(anchor => {
+document.querySelectorAll('.1').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
   
