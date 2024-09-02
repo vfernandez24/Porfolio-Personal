@@ -1,4 +1,4 @@
-document.querySelectorAll('.1').forEach(anchor => {
+document.querySelectorAll('.link__animation').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
   
