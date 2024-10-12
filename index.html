@@ -6,15 +6,22 @@
     <title>Porfolio Victor Fernandez</title>
     <link rel="icon" href="img/Icono.png" type="image/png">
 
-    <!--Styles-->
+    <!--* Styles -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!--Fonts-->
+    <!--* Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--* Scripts -->
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/animationMenuScroll.js" defer></script>
 </head>
+
 <body>
+
     <div id="container" class="container">
 
         <!--Header-->
@@ -31,7 +38,7 @@
                             <a href="#sobreMi" class="1 link__animation header__link">Sobre mi</a>
                         </li>
                         <li class="header__item">
-                            <a href="#habilidades" class="1 link__animation header__link">Skills</a>
+                            <a href="#habilidades" class="1 link__animation header__link">Habilidades</a>
                         </li>
                         <li class="header__item">
                             <a href="#proyectos" class="1 link__animation header__link">Proyectos</a>
@@ -84,7 +91,7 @@
             <!--Habilidades-->
             <section id="habilidades" class="section section_habilidades">
                 <div class="section_habilidades__container">
-                    <h2 class="section__titulo section__titulo--habilidades">{<span>Skills</span>}</h2>
+                    <h2 class="section__titulo section__titulo--habilidades">{<span>Habilidades</span>}</h2>
                     <div class="section_habilidades__containerHabilidades">
                         <div class="section_habilidades__containerHabilidades1">
                             <div class="section_habilidades__habilidad">
@@ -123,8 +130,10 @@
                 <h2 class="section__titulo">{<span>Proyectos</span>}</h2>
                 <div class="section_proyectos__contenedorProyectos">
                     <div class="section_proyectos__containerProyectos">
-                        <div class="section_proyectos__proyecto section_proyectos__proyecto--TuLibroFavorito">
-                            <img class="section_proyectos__img" src="img/MiLibroFavorito.png">
+                        <div class="section_proyectos__proyecto">
+                            <div class="section_proyectos__img section_proyectos__img--1">
+                                Tienda<span>LocalStorage</span>.com
+                            </div>
                             <div class="section_proyectos__div">
                                 <div class="section_proyectos__divEnlaces">
                                     <a target="_blank" href="" class="section_proyectos__links">Web</a>
@@ -132,8 +141,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section_proyectos__proyecto section_proyectos__proyecto--InicioDeSesion">
-                            <img class="section_proyectos__img" src="img/InicioDeSesion.png">
+                        <div class="section_proyectos__proyecto">
+                            <div class="section_proyectos__img section_proyectos__img--2">
+                                Color Aleatorio
+                            </div>
                             <div class="section_proyectos__div">
                                 <div class="section_proyectos__divEnlaces">
                                     <a target="_blank" href="https://vfernandez24.github.io/Inicio-de-Sesion/" class="section_proyectos__links">Web</a>
@@ -143,8 +154,10 @@
                         </div>
                     </div>
                     <div class="section_proyectos__containerProyectos">
-                        <div class="section_proyectos__proyecto section_proyectos__proyecto--FormularioDeContacto">
-                            <img class="section_proyectos__img" src="img/FormularioDeContacto.png">
+                        <div class="section_proyectos__proyecto">
+                            <div class="section_proyectos__img section_proyectos__img--3">
+                                To Do List
+                            </div>
                             <div class="section_proyectos__div">
                                 <div class="section_proyectos__divEnlaces">
                                     <a target="_blank" href="https://vfernandez24.github.io/Formulario-de-Contacto/" class="section_proyectos__links">Web</a>
@@ -152,8 +165,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section_proyectos__proyecto section_proyectos__proyecto--Calculadora">
-                            <img class="section_proyectos__img" src="img/Calculadora.png">
+                        <div class="section_proyectos__proyecto">
+                            <div class="section_proyectos__img section_proyectos__img--4">
+                                Conversor de Unidades
+                            </div>
                             <div class="section_proyectos__div">
                                 <div class="section_proyectos__divEnlaces">
                                     <a target="_blank" href="" class="section_proyectos__links">Web</a>
@@ -175,7 +190,7 @@
                     <p class="section_contacto__texto">
                         ¿Tienes una idea para un proyectos? Enviame un mensaje y estaré encantado de escucharla y seguramente de participar en ella
                     </p>
-                    <a href="mensaje.html" class="section_contacto__btn">
+                    <a href="contacto.html" class="section_contacto__btn">
                         Enviar Mensaje
                     </a>
                 </div>
@@ -206,8 +221,5 @@
         </footer>
     </div>
 
-    <script src="js/scroll.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/animationMenuScroll.js"></script>
 </body>
 </html>
