@@ -1,15 +1,20 @@
 :root {
-    --primary-color: #ff6f61;
-    --secundary-color: #daa520;
-    --background-color: #11131d;
-    --text-color: #ffffff;
+    --background: #121212;
+    --background2: ##1E1E1E;
+    --text: #B3B3B3;
+    --important: #E0E0E0;
+    --acent: #B23A48;
+    --link: #3A7CA5;
+    --btn: #4CAF50;
+    --alert: #FFB74D;
+    --primary: #ff6f61;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -60,57 +65,6 @@ body {
     background-color: #11131dc5;
 }
 
-.header__logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.header__logo a {
-    margin-left: 5vw;
-    color: var(--primary-color);
-    text-shadow: 0px 0px 15px #ffb1b1;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all .5s ease;
-}
-
-.header__logo:hover a {
-    text-shadow: 0px 0px 20px #ff6355;
-}
-
-.header__nav {
-    width: 50%;
-}
-
-.header__item {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header hr {
-    rotate: 180deg;
-    border: none;
-    background-color: var(--text-color);
-    width: 1px;
-    justify-self: center;
-}
-
-.header__link {
-    width: fit-content;
-    text-wrap: nowrap;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: all .5s ease;
-    padding-left: 10px;
-}
-
-.header__link:hover {
-    color: var(--primary-color);
-}
-
 .header__link--contact {
     padding: 5px 15px;
     border: 1px solid var(--primary-color);
@@ -141,20 +95,6 @@ body {
     align-self: center;
 }
 
-.header__list {
-    margin-right: 5vw;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    flex-direction: row;
-}
-
-.header__opciones {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
-    column-gap: 10px;
-}
-    
 .header__btn {
     display: none;
 }
@@ -171,7 +111,6 @@ main {
 }
 
 .section_inicio {
-    height: 112vh;
     display: flex;
     justify-content: center;
     align-items: center;

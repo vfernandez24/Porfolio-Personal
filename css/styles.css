@@ -1,0 +1,148 @@
+:root {
+    --background: #121212;
+    --background2: #1E1E1E;
+    --text: #B3B3B3;
+    --important: #E0E0E0;
+    --acent: #B23A48;
+    --link: #3A7CA5;
+    --btn: #4CAF50;
+    --alert: #FFB74D;
+    --primary: #ff6f61;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+body {
+    top: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    background: var(--background);
+}
+
+.clearfix {
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--link);
+    width: 80%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2b6386;
+    width: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background2);
+    padding: 5px 5px;
+}
+
+
+.header {
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.header__nav {
+    width: fit-content;
+}
+
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__item {
+    margin: 0;
+    width: fit-content;
+    padding: 0;
+    color: var(--text);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.header__item:hover {
+    color: var(--btn);
+}
+
+.header__link {
+    padding: 0;
+    width: fit-content;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__btn {
+    display: none;
+}
+
+main {
+    margin-top: 70px;
+}
+
+
+.section {
+    height: 100vh;
+    width: 100%;
+}
+
+.section_inicio {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: start;
+    padding-top: 30vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_inicio__titulo1 {
+    height: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--important);
+}
+
+.section_inicio__foto {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.section_inicio__frase1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.section_inicio__frase1 span {
+    color: var(--btn);
+}
+
+.section_inicio__frase2 {
+    font-weight: 400;
+    color: var(--text);
+    font-size: 35px;
+}

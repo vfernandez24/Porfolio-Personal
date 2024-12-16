@@ -8,6 +8,7 @@
 
     <!--* Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--* Icons -->
     <script src="https://kit.fontawesome.com/16ace90703.js" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
     <!--* Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--* Scripts -->
     <script src="js/scroll.js" defer></script>
@@ -23,36 +24,27 @@
     <script src="js/animationMenuScroll.js" defer></script>
 </head>
 
-<body>
+<body id="body">
 
     <div id="container" class="container">
 
         <!--Header-->
         <header id="nav" class="header">
-            <!--Logo-->
-            <div class="header__logo">
-                <h1><a href="index.html">Victor Fernandez</a></h1>
-            </div>
             <!--Nav-->
             <div class="header__nav">
                 <ul class="header__list">
-                    <div class="header__opciones">
-                        <li class="header__item">
-                            <a href="#sobreMi" class="1 link__animation header__link">Sobre mi</a>
-                        </li>
-                        <hr>
-                        <li class="header__item">
-                            <a href="#habilidades" class="1 link__animation header__link">Habilidades</a>
-                        </li>
-                        <hr>
-                        <li class="header__item">
-                            <a href="#proyectos" class="1 link__animation header__link">Proyectos</a>
-                        </li>
-                        <hr>
-                        <li class="header__item">
-                            <a href="contacto.html" class="header__link header__link--contact">Contacto</a>
-                        </li>
-                    </div>
+                    <li class="header__item">
+                        <a href="#body" class="link__animation header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#sobreMi" class="link__animation header__link">About me</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#proyectos" class="link__animation header__link">Projects</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="contacto.html" class="header__link header__link--contact">Contact</a>
+                    </li>
                 </ul>
             </div>
             <!--Boton-->
@@ -64,29 +56,27 @@
         <main>
 
             <!--Inicio-->
-            <section class="section section_inicio">
+            <section id="inicio" class="section section_inicio">
                 <div class="section_inicio__titulo1">
-                    <img class="section_inicio__foto" src="img/html_simbolo.svg">
-                    <h1 class="section_inicio__frase1">Hola, soy <span>Víctor Fernández</span>,</h1>
+                    <img class="section_inicio__foto" src="assets/html_simbolo.svg">
+                    <h1 class="section_inicio__frase1">Hi!, I'm <span>Víctor Fernández</span>,</h1>
                 </div>
-                <h1 class="section_inicio__frase2">estudiante y aficionado a la programacion web</h1>
+                <h1 class="section_inicio__frase2">student and frontend developer</h1>
             </section>
 
             <!--Sobre mí-->
             <section id="sobreMi" class="section section_sobreMi">
-                <h2 class="section__titulo">{<span>Sobre mi</span>}</h2>
-                <div class="section_sobreMi__contenido">
-                    <img class="section_sobreMi__foto" src="img/human_foto.svg">
-                    <div class="section_sobreMi__texto">
-                        <p>
-                            Soy Victor, un programador frontend con pasión por crear interfaces web elegantes y funcionales.  Con experiencia en HTML, CSS, JavaScript y React,  me enfoco en diseñar soluciones intuitivas y  accesibles. Me encanta enfrentar nuevos desafíos  y aprender continuamente para mejorar mis  habilidades. Si tienes un proyecto en mente,  estaré encantado de ayudarte a darle vida.
-                        </p>
+                <div class="sectio_sobreMi__container">
+                    <h2 class="section__titulo">{<span>Sobre mi</span>}</h2>
+                    <div class="section_sobreMi__contenido">
+                        <img class="section_sobreMi__foto" src="img/human_foto.svg">
+                        <div class="section_sobreMi__texto">
+                            <p>
+                                Soy Victor, un programador frontend con pasión por crear interfaces web elegantes y funcionales.  Con experiencia en HTML, CSS, JavaScript y React,  me enfoco en diseñar soluciones intuitivas y  accesibles. Me encanta enfrentar nuevos desafíos  y aprender continuamente para mejorar mis  habilidades. Si tienes un proyecto en mente,  estaré encantado de ayudarte a darle vida.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <!--Habilidades-->
-            <section id="habilidades" class="section section_habilidades">
                 <div class="section_habilidades__container">
                     <h2 class="section__titulo section__titulo--habilidades">{<span>Habilidades</span>}</h2>
                     <div class="section_habilidades__containerHabilidades">
@@ -121,6 +111,8 @@
                     </div>
                 </div>
             </section>
+
+            <!--Habilidades-->
 
             <!--Proyectos-->
             <section id="proyectos" class="section section_proyectos">
