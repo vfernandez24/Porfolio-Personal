@@ -108,6 +108,26 @@ main {
     width: 100%;
 }
 
+.section__titulo {
+    text-align: center;
+    color: var(--important);
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.section__titulo::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60px;
+    height: 5px;
+    background-color: var(--btn);
+    border-radius: 5px;
+}
+
 .section_inicio {
     height: calc(100vh - 70px);
     display: flex;
@@ -146,3 +166,67 @@ main {
     color: var(--text);
     font-size: 35px;
 }
+
+.section__sobreMi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section_sobreMi__container {
+
+}
+
+.section_sobreMi__containerHabilidades {
+    display: flex;
+    gap: 10px;
+    row-gap: 10px;
+}
+
+.habilidad {
+    --html: #e34c26;
+    --css: #264de4;
+    --javascript: #f0db4f;
+    --github: #189cac;
+    --figma: var(--btn);
+    color: var(--text);
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text);
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: all .3s ease;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.habilidad:nth-of-type(1):hover {
+    color: var(--btn);
+    border-color: var(--btn);
+} 
+
+.habilidad:nth-of-type(2):hover {
+    border-color: var(--html);
+    color: var(--html);
+}
+
+.habilidad:nth-of-type(3):hover {
+    border-color: var(--css);
+    color: var(--css);
+}
+
+.habilidad:nth-of-type(4):hover {
+    border-color: var(--javascript);
+    color: var(--javascript);
+}
+
+.habilidad:nth-of-type(5):hover {
+    border-color: var(--github);
+    color: var(--github);
+}
+
+

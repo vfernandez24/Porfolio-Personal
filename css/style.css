@@ -152,18 +152,6 @@ main {
     background: var(--background-color);
 }
 
-.section__titulo {
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 2px;
-}
-
-.section__titulo span {
-    color: var(--secundary-color);
-    padding: 0 10px;
-}
-
 .section_sobreMi__contenido {
     width: 90%;
     height: 300px;
