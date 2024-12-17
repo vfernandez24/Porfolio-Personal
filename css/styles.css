@@ -18,6 +18,8 @@
 }
 
 body {
+    position: absolute;
+    left: 0px;
     top: 0px;
     width: 100vw;
     overflow-x: hidden;
@@ -167,17 +169,22 @@ main {
     font-size: 35px;
 }
 
-.section__sobreMi {
+.section_sobreMi__containerGeneral{
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 20px;
 }
 
 .section_sobreMi__container {
-
+    background-color: #ececec;
 }
 
 .section_sobreMi__containerHabilidades {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     row-gap: 10px;
 }
@@ -188,6 +195,7 @@ main {
     --javascript: #f0db4f;
     --github: #189cac;
     --figma: var(--btn);
+    --responsive: #83f23b;
     color: var(--text);
     width: fit-content;
     height: 40px;
@@ -198,6 +206,7 @@ main {
     padding: 5px 10px;
     border-radius: 7px;
     transition: all .3s ease;
+    cursor: default;
 
     i {
         margin-right: 5px;
@@ -229,4 +238,7 @@ main {
     color: var(--github);
 }
 
-
+.habilidad:nth-of-type(6):hover {
+    border-color: var(--responsive);
+    color: var(--responsive);
+}

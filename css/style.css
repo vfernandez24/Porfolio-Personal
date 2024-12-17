@@ -17,12 +17,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
-    width: 100vw;
-    overflow-x: hidden;
-    background-color: var(--background-color);
-}
-
 .clearfix {
     clear: both;
 }
