@@ -178,8 +178,21 @@ main {
     column-gap: 20px;
 }
 
-.section_sobreMi__container {
-    background-color: #ececec;
+.section_sobreMi__container h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--link);
+}
+
+.section_sobreMi__texto {
+    height: fit-content;
+    padding-right: 5%;
+    font-size: 22px;
+    text-align: left;
+    text-wrap: balance;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--text);
 }
 
 .section_sobreMi__containerHabilidades {
@@ -196,6 +209,7 @@ main {
     --github: #189cac;
     --figma: var(--btn);
     --responsive: #83f23b;
+    --terminal: #b25adb;
     color: var(--text);
     width: fit-content;
     height: 40px;
@@ -241,4 +255,9 @@ main {
 .habilidad:nth-of-type(6):hover {
     border-color: var(--responsive);
     color: var(--responsive);
+}
+
+.habilidad:nth-of-type(7):hover {
+    border-color: var(--terminal);
+    color: var(--terminal);
 }
