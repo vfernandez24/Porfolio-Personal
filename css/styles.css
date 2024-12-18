@@ -282,37 +282,37 @@ main {
     }
 }
 
-.figma {
+.figma:hover {
     color: var(--btn);
     border-color: var(--btn);
 } 
 
-.html {
+.html:hover {
     border-color: var(--html);
     color: var(--html);
 }
 
-.css {
+.css:hover {
     border-color: var(--css);
     color: var(--css);
 }
 
-.js {
+.js:hover {
     border-color: var(--javascript);
     color: var(--javascript);
 }
 
-.github {
+.github:hover {
     border-color: var(--github);
     color: var(--github);
 }
 
-.responsive {
+.responsive:hover {
     border-color: var(--responsive);
     color: var(--responsive);
 }
 
-.terminal {
+.terminal:hover {
     border-color: var(--terminal);
     color: var(--terminal);
 }
@@ -342,20 +342,27 @@ main {
 
     img {
         height: 300px;
+        transition: all .3s ease
+    }
+
+    img:hover {
+        scale: 1.1;
     }
 
     h3 {
-        font-size: 50px;
+        color: var(--alert);
+        font-size: 40px;
         text-align: center;
         font-weight: 700;
-        padding-top: 30px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     p {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
         padding-top: 10px;
+        min-height: 112px;
+        text-align: justify;
     }
 }
 
