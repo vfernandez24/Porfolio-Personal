@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-body, html {
+body {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -41,6 +41,7 @@ body, html {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--link);
+    border-radius: 4px;
     width: 80%;
 }
 
@@ -123,7 +124,7 @@ main {
 
 
 .section {
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     padding-top: 70px;
 }
@@ -460,7 +461,128 @@ main {
 }
 
 .section_proyectos__btnVerMas:hover {
-    color: var(--css);
+    color: var(--btn);
+}
+
+.section_contacto__texto {
+    display: block;
+    width: 100%;
+    padding: 80px 15% 50px 15%;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--text);
+}
+
+.formulario {
+    width: 100%;
+    min-height: calc(100vh - 12vh);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: block;
+    width: 100%;
+    padding: 0 20%;
+    color: var(--text);
+}
+
+label,
+input,
+textarea {
+    display: block;
+    color: var(--text);
+}
+
+.form__label {
+    width: calc(47.5%);
+    float: left;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.form__input {
+    border: none;
+    background: var(--background2);
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__input--1 {
+    width: calc(100% - 15px);
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.form__label--1-1 {
+    margin-right: 5%;
+}
+
+.form__input--2 {
+    max-width: calc(100% - 15px);
+    min-width: calc(100% - 15px);
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form__input--3 {
+    padding: 15px 75px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 46px;
+    background: var(--background2);
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form__input--3:hover {
+    color: var(--link);
+}
+
+footer {
+    background-color: var(--background2);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+    color: var(--btn);
 }
 
 @media (max-width: 700px) {
@@ -476,7 +598,33 @@ main {
 
     .header__nav {
         position: absolute;
-        opacity: 0;
+        top: 10vh;
+        width: 100%;
+        max-height: 0px;
+        transition: all .3s ease-in;
+        overflow: hidden;
+    }
+
+    .header__nav.visible {
+        max-height: 280px;
+    }
+
+    .header__list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .header__item:nth-of-type(1) {
+        border-top: 1px solid var(--important);
+    }
+
+    .header__item {
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        border-radius: 0;
+        border-bottom: 1px solid var(--important);
     }
 
     .header__btn {
@@ -526,6 +674,7 @@ main {
 
     .section_proyectos__img {
         width: 80%;
+        height: fit-content;
         justify-self: center;
         display: flex;
         margin: auto;
@@ -541,7 +690,6 @@ main {
         justify-content: start;
         align-items: center;
         flex-direction: column;
-        gap: 70px;
 
         img {
             max-width: 100%;
@@ -560,5 +708,26 @@ main {
     .section_proyectos__div {
         width: 100%;
         height: fit-content;
+    }
+
+    .section_proyectos__btnVerMas {
+        margin-top: 50px;
+    }
+
+    .formulario {
+        margin-bottom: 40px;
+    }
+
+    .form__label {
+        width: 100%;
+        float: none;
+    }
+
+    .form {
+        padding: 0 10%;
+    }
+
+    .footer-social a {
+        font-size: 14px;
     }
 }
